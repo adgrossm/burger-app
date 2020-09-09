@@ -1,16 +1,17 @@
-var connection = require("./connection");
+var connection = require("../config/connection.js");
 
 
-connection.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + connection.threadId);
+var PORT = process.env.PORT || 8080;
+
+app.listen(PORT, function() {
+    // Log (server-side) when our server has started
+    console.log("Server listening on: http://localhost:" + PORT);
   });
 
+
+
 function selectAll(){
-    
+
 }
 
 
@@ -18,4 +19,4 @@ function selectAll(){
 
 
 
-  module.exports = selectAll, insertOne, updateOne;
+  module.exports = orm;
