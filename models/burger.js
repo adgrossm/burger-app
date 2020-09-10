@@ -18,19 +18,9 @@ var burger = {
         orm.update("burgers", objColVals, condition, function(res){
             cb(res);
         });
-    }
+    },
 };
 
 module.exports = burger;
 
-
-
-
-
-
-
-
-
-
-module.export = ormFunctions;
 

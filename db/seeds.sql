@@ -2,4 +2,6 @@
 USE burgers_db;
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("The Classic", true), ("Double", true), ("Triple", false);
+VALUES ("The Classic", false), ("Double", false), ("Triple", false);
+
+SELECT * FROM burgers;

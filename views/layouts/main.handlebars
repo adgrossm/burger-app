@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../../public/assets/css/burger_style.css">
+    
 	<head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../public/assets/css/burger_style.css" type="text/css" />
-		<title>BURGERS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{!-- <link rel="stylesheet" href="../../public/assets/css/burger_style.css" type="text/css" /> --}}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>EAT DA BURGERS</title>
         <script src="https://code.jquery.com/jquery.js"></script>
 		
-        <script src="../../server.js"></script>
+        <script src="/assets/js/burgers.js"></script>
 	</head>
 	<body>
-        <img src="../public/assets/img/burger.png" alt="picture of a cartoon cheeseburger">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
 
-<h2>Eat-Da-Burger!</h2>
-
+                </div>
+       <img class="col-2" src="./assets/img/burger.png" height="100px" alt="picture of a cartoon cheeseburger">
+         </div>
+         <div class="col-6">
+                    
+                </div>
+{{!-- not sure I need this here --}}
+<div class="row">
+    <div class="col-4">
+    
+    </div>
+    <div class="col-4">
+    <h2>Eat-Da-Burger!</h2>
+    </div>
+    <div class="col-4">
+    
+    </div>
+</div>
 		{{{ body }}}
+             
+        </div>
 	</body>
 </html>
